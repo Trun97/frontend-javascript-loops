@@ -1,13 +1,13 @@
 // ==========================================
 // Opdracht 1a
 // Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print
-
-const scores = [
-    {name: 'Max', score: 83, grade: null},
-    {name: 'David', score: 77, grade: null},
-    {name: 'Khalid', score: 92, grade: null},
-    {name: 'Rianne', score: 66, grade: null}
-];
+//
+// const scores = [
+//     {name: 'Max', score: 83, grade: null},
+//     {name: 'David', score: 77, grade: null},
+//     {name: 'Khalid', score: 92, grade: null},
+//     {name: 'Rianne', score: 66, grade: null}
+// ];
 
 // Verwachtte uitkomsten:
 // 83
@@ -16,7 +16,9 @@ const scores = [
 // 66
 // ==========================================
 
-
+// for (let i = 0; i < scores.length; i++) {
+//     console.log(scores[i].score);
+// }
 
 
 
@@ -32,9 +34,29 @@ const scores = [
 // D
 // ==========================================
 
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i].score > 100) {
+//         console.log("A");
+//     }else if (scores[i].score > 90) {
+//         console.log("B");
+//     }else if (scores[i].score > 80) {
+//         console.log("C");
+//     }else if (scores[i].score > 70) {
+//         console.log("C");
+//     }else (scores[i].score > 60)
+//         console.log("C");
+//
+// }
+    // if (scores[i].score < 100) {
+    //     console.log("A");
+    // }else if (scores[i].score < 90) {
+    //     console.log("B");
+    // }else if (scores[i].score < 80) {
+    //     console.log("C");
+    // }else if (scores[i].score < 70) {
+    //     console.log("D");
 
-
-
+// WERKT NIET, GEEN IDEE HOE DEZE MOET
 
 // ==========================================
 // Opdracht 1c
@@ -49,7 +71,7 @@ const scores = [
 //  ];
 // ==========================================
 
-
+// Vervolgopdracht, lukt dan ook niet.
 
 
 
@@ -63,6 +85,15 @@ const NOVIEmployees = [
     {firstName: 'Tessa', lastName: 'Steur'},
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
+
+let email = "";
+
+for (let i = 0; i < NOVIEmployees.length; i++) {p
+    email = NOVIEmployees[i].firstName + NOVIEmployees[i].lastName + "@novi.nl";
+    NOVIEmployees[i].email = "email";
+}
+
+// EMAIL ADRES GENEREREN LUKT< GEEN IDEE WAAROM PUSH NIET WERKT
 
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
